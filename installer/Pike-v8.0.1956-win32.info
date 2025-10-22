@@ -1,0 +1,120 @@
+=========================================================
+Pike v8.0 release 1956 configuration summary
+
+install information:
+prefix........ /usr/local
+pike binary... /usr/local/bin/pike
+pike library.. /usr/local/pike/8.0.1956/lib
+
+system information:
+system.... Linux 6.1.67-gentoo
+uname..... Windows starcraft 5.2.3790-smp i386
+hostname.. starcraft
+user...... grubba
+
+build information:
+source path..... /home/grubba/src/Pike-Dist/src
+build path...... /home/grubba/src/Pike-Dist/build/windows-5.2.3790-smp-i386
+ABI............. 32
+cpp............. rntcl -E
+cc.............. /home/grubba/src/Pike-Dist/bin/smartlink rntcl
+ld.............. $(CC) $(CFLAGS)
+cc shared.......  -DDYNAMIC_MODULE
+ld shared....... 
+pike............ 
+install......... /usr/bin/install -c
+shared object... .so
+libs............ -lshell32 -lkernel32 -lws2_32 -ladvapi32 
+cross-compiled.. no
+building lib.... no
+CPPFLAGS........
+CFLAGS (opt).... -O2
+CFLAGS (warn)...
+CFLAGS (misc)... -g -MD  
+LDFLAGS......... -LARGEADDRESSAWARE  
+dtrace.......... yes
+
+features:
+dynamic loading..... yes
+threads............. yes (nt)
+signal handler...... custom NT
+cdebug.............. yes
+rtldebug............ no
+dmalloc............. no
+dlmalloc............ yes
+byte code format.... ia32
+module reloc........ no
+use machine code.... yes
+int type............ long (4 bytes)
+float type.......... float (4 bytes) (ieee little endian)
+pointer size........ 4 bytes
+svalue size......... 8 bytes (2+2+4)
+
+Bz2................. yes (using libbz2)
+COM................. yes
+DNS-SD.............. no (dns_sd.h or howl.h not found)
+DVB................. no (dependencies failed)
+FFmpeg.............. no (dependencies failed)
+Fuse................ no (dependencies failed)
+GLUT................ no (dependencies failed)
+GSSAPI.............. yes (-lgssapi32)
+GTK1................ no (dependencies failed)
+GTK2................ yes
+GTK2.Databox........ no (dependencies failed)
+GTK2.GladeXML....... no (dependencies failed)
+GTK2.SourceView..... no (dependencies failed)
+Gdbm................ no (dependencies failed)
+Gmp (bignums)....... yes (using libgmp)
+Gnome2.............. no (dependencies failed)
+Gnome2.Canvas....... no (dependencies failed)
+Gnome2.Client....... no (dependencies failed)
+Gz.................. yes (libz)
+Image.FreeType...... yes
+Image.JPEG.......... yes
+Image.SVG........... no (dependencies failed)
+Image.TIFF.......... yes
+Image.TTF........... no (dependencies failed)
+Image.WebP.......... no (dependencies failed)
+Image.XFace......... yes
+Java................ yes (-lkernel32 -lws2_32 -ladvapi32)
+Kerberos............ yes (-lkrb5_32)
+Math.Transforms.FFT. no (fftw.h not found)
+Mysql............... yes (liblibmysql)
+Nettle.............. yes
+Odbc................ no (dependencies failed)
+Oracle.............. no (does not work)
+PDF.PDFlib.......... no (dependencies failed)
+PDF.Panda........... no (dependencies failed)
+Pango............... yes
+Postgres............ yes
+Regexp.PCRE......... yes (libpcre)
+SANE................ no (dependencies failed)
+SDL................. no (dependencies failed)
+SDL_mixer........... no (dependencies failed)
+SQLite.............. yes
+Sass................ no (dependencies failed)
+VCDiff.............. no (missing lib)
+ZXID................ no (dependencies failed)
+sybase.............. no (dependencies failed)
+
+Warnings and notes summary:
+
+WARNING: Windows detected.
+
+WARNING: Enabling the configure cache for performance reasons.
+
+WARNING: Unrecognized object file format: 
+
+WARNING: Unrecognized object file format: 
+
+WARNING: Unrecognized object file format: 
+
+WARNING: Unrecognized object file format: 
+
+WARNING: Unrecognized object file format: 
+
+WARNING: Unrecognized object file format: 
+
+WARNING: rntcc/rntcl/rnticl/rntecl detected.
+
+=========================================================
