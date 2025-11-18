@@ -1,0 +1,20 @@
+rpm2cpio pike8.0-8.0.1738-1.0.el8.x86_64.rpm | cpio -idmv
+
+This shows you:
+- File layout
+- Install paths
+- Configuration files
+- Post-install scripts
+
+2. Use as a Template for Your Own RPM
+If you can find the source RPM (.src.rpm) for Pike 8.0.1738, 
+it will contain a .spec file. That’s the key to building your own RPM:
+
+- Modify the .spec file to match your custom Pike build
+- Update version, release, and source tarball
+- Adjust build flags and dependencie
+
+3. Build Your Own RPM
+Once you have a working .spec file:
+rpmbuild -ba pike.spec
+
