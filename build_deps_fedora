@@ -1,10 +1,11 @@
 
 sudo dnf install nasm
+sudo dnf install avahi-compat-libdns_sd-devel
 dnf install   gcc gcc-c++ make   autoconf automake libtool   bison flex pkg-config   gmp-devel zlib-devel pcre2-devel   openssl-devel   readline-devel   libjpeg-turbo-devel libpng-devel   sqlite-devel   gettext-devel
 dnf install   libtirpc-devel   libX11-devel libXpm-devel   postgresql-devel   libicu-devel
-dnf install --allowerasing --skip-broken \
-  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
-  https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm && \
+#dnf install --allowerasing --skip-broken \
+#  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+#  https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm && \
 dnf install --allowerasing --skip-broken \
   bison nettle-devel wine-devel avahi-devel libdvbv5-devel ffmpeg-devel fuse-devel \
   freeglut-devel gtk+-devel libglade2-devel gtksourceview5-devel \
@@ -14,7 +15,8 @@ dnf install --allowerasing --skip-broken \
 go TO src
 cd ~/Pike-v8.0.1956/src/modules/
 mv Gz /tmp/Gz.disabled
-mv Gdbm /tmp/Gdbm.disabled
+mv modules/_WhiteFish /tmp/
+mv HTTPLoop/ /tmp/HTTPLoop.disabled
 cd ~/Pike-v8.0.1956/src
 ./run_autoconfig
 mkdir build
